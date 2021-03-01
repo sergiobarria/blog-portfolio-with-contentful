@@ -1,7 +1,7 @@
 import React from "react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-// import SEO from "@/components/SEO"
+import SEO from "@/components/SEO"
 import Header from "@/components/Header"
 import client from "../contentful/client"
 import Title from "@/components/Title"
@@ -10,7 +10,7 @@ const About = ({ about }) => {
   // console.log(about[0].fields.body);
   return (
     <>
-      {/* <SEO title="About" /> */}
+      <SEO title="About" />
       <Header
         title="Hey, I'm Sergio"
         subtitle="I'm a Civil Engineer turn into Web Developer"

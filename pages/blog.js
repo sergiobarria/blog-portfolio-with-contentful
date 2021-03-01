@@ -1,6 +1,6 @@
 import React from "react"
 
-// import SEO from '../../components/SEO';
+import SEO from "@/components/SEO"
 import Header from "@/components/Header"
 // import Newsletter from '../../components/Newsletter';
 import Title from "@/components/Title"
@@ -14,7 +14,7 @@ const BlogPage = ({ posts }) => {
 
   return (
     <>
-      {/* <SEO title='Blog' /> */}
+      <SEO title="Blog" />
       <Header title="Welcome to The Coding Script Blog!!" />
       <section className="max-w-screen-xl py-16 mx-auto my-0 bg-white md:px-20">
         <Title title="Latest Posts" />

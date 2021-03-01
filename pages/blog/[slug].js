@@ -10,7 +10,7 @@ import {
 } from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 import client from "../../contentful/client"
-// import SEO from '../../components/SEO';
+import SEO from "@/components/SEO"
 import formatDate from "../../utils/formatDate"
 // import SocialShare from '../../components/SocialShare';
 
@@ -69,7 +69,7 @@ const PostPage = ({ article }) => {
 
   return (
     <>
-      {/* <SEO title="Blog" /> */}
+      <SEO title="Blog" />
       <section className="min-h-screen">
         <header className="border-t-2 h-80 bg-gradient-to-t from-grey-900 to-grey-700">
           <div className="flex flex-col justify-end h-full max-w-3xl px-4 pt-20 pb-4 mx-auto text-white md:p-8 md:w-4/6">

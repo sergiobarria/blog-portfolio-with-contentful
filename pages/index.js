@@ -1,5 +1,6 @@
 import Head from "next/head"
 
+import SEO from "@/components/SEO"
 import Hero from "@/components/Hero"
 import Services from "@/components/Services"
 import Stack from "@/components/Stack"
@@ -23,6 +24,7 @@ export default function Home({ posts }) {
 
   return (
     <>
+      <SEO title="Home" />
       <Hero heroData={heroData} />
       <Services />
       <Stack />
