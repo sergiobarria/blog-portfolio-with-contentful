@@ -8,6 +8,9 @@ import NavbarLinks from "@/components/NavbarLinks"
 
 const Navbar = ({ toggleSidebar }) => {
   const [scrolled, setScrolled] = useState(false)
+  const [blogWindowActive, setBlogWindowActive] = useState(false)
+
+  const router = useRouter()
 
   // handle navbar background on scroll
   useEffect(() => {
@@ -26,11 +29,23 @@ const Navbar = ({ toggleSidebar }) => {
     }
   }, [scrolled])
 
+  // change navbar background
+  useEffect(() => {
+    const activeWindow = router.pathname
+    // console.log(activeWindow);
+
+    if (activeWindow !== "/") {
+      setBlogWindowActive(true)
+    } else {
+      setBlogWindowActive(false)
+    }
+  }, [router])
+
   return (
     <nav
       className={`fixed top-0 left-0 z-10 flex justify-center w-full h-20 transparent ${
         scrolled ? "bg-grey-900" : ""
-      }`}
+      } ${blogWindowActive ? "bg-grey-900 border-b-2 border-green-500" : ""}`}
     >
       <div className="flex items-center justify-between w-5/6 max-w-screen-xl">
         <Link href="/">

@@ -1,3 +1,30 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-3xl font-medium;
+  }
+
+  h3 {
+    @apply text-lg font-medium tracking-widest capitalize;
+  }
+
+  h4 {
+    @apply text-sm tracking-widest capitalize;
+  }
+
+  h5 {
+    @apply text-xs tracking-widest capitalize;
+  }
+
+  p {
+    @apply my-4 text-base md:text-base lg:text-lg;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
