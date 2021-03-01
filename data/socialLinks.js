@@ -1,12 +1,11 @@
-import Link from "next/link"
 import { FaLinkedin, FaInstagram } from "react-icons/fa"
-import { AiFillGithub } from "react-icons/ai"
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai"
 
 export const socialLinks = [
   {
     id: 1,
     icon: <FaInstagram className="social_icon" />,
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/thecodingscript",
   },
   {
     id: 2,
@@ -15,7 +14,12 @@ export const socialLinks = [
   },
   {
     id: 3,
-    icon: <FaLinkedin className="social_icon" />,
-    url: "https://www.instagram.com/",
+    icon: <AiOutlineTwitter className="social_icon" />,
+    url: "https://twitter.com/thecodingscript",
   },
+  // {
+  //   id: 4,
+  //   icon: <FaLinkedin className="social_icon" />,
+  //   url: "https://www.instagram.com/",
+  // },
 ]

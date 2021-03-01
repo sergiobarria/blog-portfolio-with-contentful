@@ -6,8 +6,8 @@ export default {
     site_name: "The Coding Script",
   },
   twitter: {
-    handler: "@sergioCarr01",
-    site: "https://twitter.com/sergioCarr01",
+    handler: "@thecodingscript",
+    site: "https://twitter.com/thecodingscript",
     cardType: "summary_large_image",
   },
 }
