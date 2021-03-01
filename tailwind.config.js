@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      minHeight: {
+        80: "80rem",
+        "screen-center": "calc(100vh - 5rem - 9rem)",
+      },
       height: {
         "h-1-px": "1px",
         "screen/2": "50vh",

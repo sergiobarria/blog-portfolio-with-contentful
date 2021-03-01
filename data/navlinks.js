@@ -32,10 +32,10 @@ export const navLinks = [
   //   icon: <GrHome/>,
   //   url: '/resources',
   // },
-  // {
-  //   id: 6,
-  //   text: 'contact',
-  //   icon: <IoIosContact />,
-  //   url: '/contact',
-  // },
+  {
+    id: 6,
+    text: "contact",
+    icon: <IoIosContact />,
+    url: "/contact",
+  },
 ]

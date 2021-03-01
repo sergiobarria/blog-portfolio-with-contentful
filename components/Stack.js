@@ -8,7 +8,7 @@ const Stack = () => {
   const [value, setValue] = useState(0)
 
   return (
-    <section className="py-10 bg-gradient-to-r from-green-700 via-green-600 to-green-500">
+    <section className="py-10 bg-gradient-to-tr from-green-300 via-blue-300 to-green-300">
       <Title title="Developer Stack" color="white" />
       <div className="max-w-screen-lg shadow-xl lg:grid lg:grid-cols-12 md:w-8/12 md:mx-auto ">
         {/* btn container */}

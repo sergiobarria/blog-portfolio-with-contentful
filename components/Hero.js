@@ -35,7 +35,9 @@ const Hero = ({ heroData }) => {
 
       <article className={`${styles.article}`}>
         <div className="capitalize">
-          <h1 className="mb-4 text-4xl font-medium tracking-widest">{title}</h1>
+          <h1 className="mb-4 text-4xl font-medium tracking-widest lg:text-6xl">
+            {title}
+          </h1>
           <h3 className="mb-4 text-xl leading-7 tracking-widest md:text-4xl">
             {subtitle}
           </h3>

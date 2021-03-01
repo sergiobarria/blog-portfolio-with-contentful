@@ -19,7 +19,7 @@ const PostsPreview = ({ posts, title }) => {
 
       <div className="flex items-center justify-center w-4/12 mx-auto my-0 mt-12 md:w-3/12">
         <Link href="/blog">
-          <a className="flex items-center justify-around w-40 px-4 py-2 font-medium text-green-500 uppercase transition duration-500 transform bg-white rounded shadow-lg cursor-pointer hover:bg-green-500 hover:text-white hover:scale-125">
+          <a className="flex items-center justify-around w-40 px-4 py-2 font-medium text-green-600 uppercase transition duration-500 transform bg-white rounded shadow-lg cursor-pointer hover:bg-green-500 hover:text-white hover:scale-125">
             <span>see more</span>
             <FaArrowRight />
           </a>

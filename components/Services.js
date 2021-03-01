@@ -20,7 +20,7 @@ const Services = () => {
           return (
             <article
               key={id}
-              className="transition-all duration-300 transform lg:px-4 lg:border lg:shadow-md lg:rounded-md lg:hover:scale-110 lg:hover:shadow-lg lg:hover:text-white lg:hover:bg-green-400"
+              className="transition-all duration-300 transform lg:px-4 lg:border lg:shadow-md lg:rounded-md lg:hover:scale-110 lg:hover:shadow-lg lg:hover:text-white lg:hover:bg-green-500"
             >
               <div className="flex items-center justify-center">
                 <Image src={icon} alt="service-icon" width={250} height={250} />

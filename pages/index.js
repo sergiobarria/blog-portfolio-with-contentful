@@ -7,7 +7,7 @@ import client from "../contentful/client"
 import PostsPreview from "@/components/PostsPreview"
 
 export default function Home({ posts }) {
-  console.log(posts)
+  // console.log(posts)
 
   const heroData = {
     title: "Welcome!!",
