@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        // default font family
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       minHeight: {
