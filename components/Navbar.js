@@ -7,8 +7,31 @@ import Link from "next/link"
 import NavbarLinks from "@/components/NavbarLinks"
 
 const Navbar = ({ toggleSidebar }) => {
+  const [scrolled, setScrolled] = useState(false)
+
+  // handle navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY >= 80
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled)
+      }
+    }
+
+    document.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      // clean up the event handler when the component unmounts
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [scrolled])
+
   return (
-    <nav className="fixed top-0 left-0 z-10 flex justify-center w-full h-20 bg-grey-900">
+    <nav
+      className={`fixed top-0 left-0 z-10 flex justify-center w-full h-20 transparent ${
+        scrolled ? "bg-grey-900" : ""
+      }`}
+    >
       <div className="flex items-center justify-between w-5/6 max-w-screen-xl">
         <Link href="/">
           <a>
