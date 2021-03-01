@@ -7,6 +7,14 @@ import { navLinks } from "@data/navlinks"
 import { socialLinks } from "@data/socialLinks"
 
 const Sidebar = ({ isOpen, setIsOpen, toggleSidebar }) => {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsOpen(false)
+    }
+  }, [router.pathname])
+
   return (
     <aside
       className={`bg-grey-900 fixed top-0 left-0 w-full h-full z-50 transform transition-all duration-700 ease-in-out ${
