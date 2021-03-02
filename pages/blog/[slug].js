@@ -24,9 +24,9 @@ const PostPage = ({ article }) => {
     summary,
     content,
     date,
-  } = article[0].fields
+  } = article.fields
 
-  console.log(article[0])
+  console.log(article)
 
   const formatedDate = formatDate(date)
 
@@ -152,7 +152,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      article: response.items,
+      article: response.items[0],
     },
     revalidate: 1,
   }
