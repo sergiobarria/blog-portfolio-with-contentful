@@ -51,10 +51,10 @@ const Navbar = ({ toggleSidebar }) => {
         <Link href="/">
           <a>
             <Image
-              src="/assets/logo-v2.svg"
+              src="/assets/logo-v2.png"
               alt="logo"
               width={180}
-              height={80}
+              height={40}
             />
           </a>
         </Link>
