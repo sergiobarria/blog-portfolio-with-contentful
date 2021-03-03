@@ -140,7 +140,7 @@ export const getStaticPaths = async () => {
         slug: item.fields.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -154,6 +154,6 @@ export const getStaticProps = async (context) => {
     props: {
       article: response.items[0],
     },
-    // revalidate: 1,
+    revalidate: 1,
   }
 }
