@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { GoQuote } from "react-icons/go"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS, INLINES } from "@contentful/rich-text-types"
@@ -15,6 +16,16 @@ import formatDate from "../../utils/formatDate"
 // import SocialShare from '../../components/SocialShare';
 
 const PostPage = ({ article }) => {
+  const router = useRouter()
+
+  if (router.isFallback) {
+    return (
+      <section className="flex flex-col justify-center mt-20 min-h-screen-center">
+        <h1>Loading...</h1>
+      </section>
+    )
+  }
+
   const {
     title,
     category,
@@ -26,7 +37,7 @@ const PostPage = ({ article }) => {
     date,
   } = article.fields
 
-  console.log(article)
+  // console.log(article)
 
   const formatedDate = formatDate(date)
 
@@ -140,7 +151,7 @@ export const getStaticPaths = async () => {
         slug: item.fields.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -154,6 +165,6 @@ export const getStaticProps = async (context) => {
     props: {
       article: response.items[0],
     },
-    // revalidate: 1,
+    revalidate: 1,
   }
 }
