@@ -26,7 +26,7 @@ const BlogPage = ({ posts }) => {
 
         <Title title="All Posts" />
         <div className="grid max-w-screen-lg gap-8 mx-auto mb-10 lg:grid lg:grid-cols-2">
-          {moreBlogs.lenth > 0 ? (
+          {moreBlogs.length >= 0 ? (
             moreBlogs.map((blog) => <LatestPrev key={blog.sys.id} {...blog} />)
           ) : (
             <h3>There are no more blogs to display at the moment</h3>
