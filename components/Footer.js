@@ -11,7 +11,7 @@ const Footer = () => {
         <h4>
           All rights reserved. Built with{" "}
           <span className="font-semibold text-green-500">
-            <a href="https://www.gatsbyjs.com">Next js</a>
+            <a href="https://www.nextjs.org">Next js</a>
           </span>
         </h4>
       </div>
